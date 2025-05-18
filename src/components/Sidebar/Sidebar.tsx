@@ -9,6 +9,7 @@ import { SidebarWrapper, Logo, TopSection, CenteredButtons } from "./Sidebar.sty
 const Sidebar: React.FC = () => {
   const { pathname } = useLocation();
 
+
   return (
     <SidebarWrapper>
       <TopSection>

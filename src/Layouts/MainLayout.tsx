@@ -20,22 +20,22 @@ const MainLayout: React.FC = () => {
       </SidebarWrapper>
     </Root>
   );
+  
+  export default MainLayout;
+  
+  const Root = styled("div")({
+    display: "flex",
+    width: "100vw",
+  });
+  
+  const Content = styled("div")({
+    flexGrow: 1,
+    paddingRight: `${SIDEBAR_WIDTH}px`, 
+  });
+  
+  const SidebarWrapper = styled("div")({
+    width: `${SIDEBAR_WIDTH}px`,
+    position: "fixed",
+    right: 0,  
+  });
 };
-
-export default MainLayout;
-
-const Root = styled("div")({
-  display: "flex",
-  width: "100vw",
-});
-
-const Content = styled("div")({
-  flexGrow: 1,
-  paddingRight: `${SIDEBAR_WIDTH}px`, 
-});
-
-const SidebarWrapper = styled("div")({
-  width: `${SIDEBAR_WIDTH}px`,
-  position: "fixed",
-  right: 0,  
-});
